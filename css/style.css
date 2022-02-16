@@ -69,3 +69,55 @@ ol > .item {
     color: #FFFFFF;
     text-decoration: none;
 }
+
+.seccion-tarjetas > .seccion-titulo {
+    width: 80%;
+    margin: 25px auto;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    text-align: center;
+}
+
+.seccion-titulo > .titulo-principal {
+    padding: 2rem;
+    font-size: 5rem;
+    color: #FFFFFF;
+    background-image: url(../img/bakbaner.png);
+}
+
+.contenedor-tarjetas {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.tarjeta {
+    display: inline-block;
+    vertical-align: top;
+    width: 20rem;
+    height: 30rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid;
+    background-color: #FFFFFF;
+}
+
+.icono-tarjeta {
+    font-size: 6rem;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+.tarjeta-titulo {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #0053A2;
+}
+
+.tarjeta-texto {
+    color: #446D9D;
+    font-size: 1.6rem;
+    font-family: 'sans-serif';
+}
