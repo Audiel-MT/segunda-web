@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +17,7 @@
 <body class="contenedor">
     <header class="cabecera">
         <div class="titulo">
-            <span class="material-icons icon">
-                settings
-            </span>
+            <i class='bx bxs-cog icon'></i>
             <h3>blog</h3>
         </div>
         <nav class="contenedor-menu">
@@ -39,45 +37,35 @@
             </article>
             <article class="contenedor-tarjetas">
                 <div class="tarjeta">
-                    <span class="material-icons icono-tarjeta">
-                        code
-                    </span>
+                    <i class='bx bx-code icono-tarjeta'></i>
                     <h3 class="tarjeta-titulo">desarrollo web</h3>
                     <p class="tarjeta-texto">
                         Aprende los principales leguejes para el desarrollo webs ¡conviertete en un webmaster!
                     </p>
                 </div>
                 <div class="tarjeta">
-                    <span class="material-icons icono-tarjeta">
-                        terminal
-                    </span>
+                    <i class='bx bxs-terminal icono-tarjeta'></i>
                     <h3 class="tarjeta-titulo">sitemas operativos</h3>
                     <p class="tarjeta-texto">
                         Aprende a administrar sistemas Linux y Windows
                     </p>
                 </div>
                 <div class="tarjeta">
-                    <span class="material-icons icono-tarjeta">
-                        settings
-                    </span>
+                    <i class='bx bxs-cog icono-tarjeta'></i>
                     <h3 class="tarjeta-titulo">harwared</h3>
                     <p class="tarjeta-texto">
                         Conoce los estresijos del harwared
                     </p>
                 </div>
                 <div class="tarjeta">
-                    <span class="material-icons icono-tarjeta">
-                        signal_cellular_alt
-                    </span>
+                    <i class='bx bx-broadcast icono-tarjeta'></i>
                     <h3 class="tarjeta-titulo">redes e internet</h3>
                     <p class="tarjeta-texto">
                         Aprende a comfigurar y administrar redes imformaticas y servidores.
                     </p>
                 </div>
                 <div class="tarjeta">
-                    <span class="material-icons icono-tarjeta">
-                        storage
-                    </span>
+                    <i class='bx bxs-data icono-tarjeta'></i>
                     <h3 class="tarjeta-titulo">Bases de datos</h3>
                     <p class="tarjeta-texto">
                         Aprende a montar y administrar bases de datos.
@@ -139,6 +127,62 @@
             </article>
             <a href="#" class="boton-blog">ir al blog</a>
         </section>
+        <aside class="barra-lateral">
+            <h5 class="barra-titulo">buscar</h5> 
+            <label class="contenedor-input">
+                <input type="text">
+                <i class='bx bx-search icons-barra'></i>
+            </label>
+            <h5 class="barra-titulo">login</h5>
+            <form class="form">
+                <label for="" class="form-contenedor">
+                    <input type="text">
+                    <i class='bx bxs-user form-icon'></i>
+                </label>
+                <label for="" class="form-contenedor">
+                    <input type="text">
+                    <i class='bx bxs-lock-alt form-icon'></i>
+                </label>
+                <div class="form-botones">
+                    <button class="boton">Entrar</button>
+                    <button class="boton">Limpiar</button>
+                    <a href="#" class="enlace">Registrate aqui</a>
+                    <a href="#" class="enlace">¿Has olvidado tu contraseña?</a>
+                </div>
+            </form>
+            <h5 class="barra-titulo">redes sociales</h5>
+            <section class="contenedor-redes-sociales">
+                <ol>
+                    <li class="redes">
+                        <a href="#">
+                            <i class='bx bxl-twitter'></i>
+                            <span class="texto">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="redes">
+                        <a href="">
+                            <i class='bx bxl-facebook-square'></i>
+                            <span class="texto">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="redes">
+                        <a href="">
+                            <i class='bx bxl-google-plus-circle'></i>
+                            <span class="texto">Google +</span>
+                        </a>
+                    </li>
+                    <li class="redes">
+                        <a href="">
+                            <i class='bx bxl-youtube'></i>
+                            <span class="texto">YouTube</span>
+                        </a>
+                    </li>
+                </ol>
+            </section>
+            <h5 class="barra-titulo">colaboradores</h5>
+            <section class="colaboradores">
+            </section>
+        </aside>
     </main>
 </body>
 
