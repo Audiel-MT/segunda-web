@@ -34,6 +34,7 @@ html {
     margin-left: 15rem;
     color: #FFFFFF;
     background-color: #37BCF9;
+    overflow: hidden;
 }
 
 .titulo > h3 {
@@ -84,6 +85,7 @@ ol > .item {
     font-size: 5rem;
     color: #FFFFFF;
     background-image: url(../img/bakbaner.png);
+    overflow: hidden;
 }
 
 .contenedor-tarjetas {
@@ -102,6 +104,7 @@ ol > .item {
     text-align: center;
     border: 1px solid;
     background-color: #FFFFFF;
+    overflow: hidden;
 }
 
 .icono-tarjeta {
@@ -328,7 +331,7 @@ ol > .item {
     height: 60px;
     line-height: 60px;
     margin-left: 1.5rem;
-    
+    overflow: hidden;
 }
 
 .redes > a {
@@ -343,6 +346,7 @@ ol > .item {
     font-family: 'sans-serif';
     font-size: 1.5rem;
     position: absolute;
+    left: -85px;
 }
 
 .colaboradores {
@@ -387,6 +391,7 @@ ul .lista a::marker {
     color: #30B7F9;
     display: inherit;
     margin-left: 20px;
+    padding-bottom: 1rem;
     border-bottom: 1px solid #FFFFFF;
 }
 
@@ -415,3 +420,314 @@ ul .lista a::marker {
     margin: 1rem 0rem;
     text-decoration: none;
 }
+
+/* Animacion al icono para que gire */
+.titulo:hover {
+    cursor: pointer;
+    background-color: #D0D0CF;
+  }
+  
+  .icon {
+    animation-name: rotacion;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes rotacion {
+    0% {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+    }
+  }
+  /* =================================== */
+  
+  /* Animacion del icono en el indice Y */
+  .titulo:hover .icon {
+    animation-name: intercanbio;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    color: #000000;
+  }
+  @keyframes intercanbio {
+    0% {
+      transform: translateY(0px);
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      color: #ffffff;
+    }
+    50% {
+      transform: translateY(60px);
+      -webkit-transform: translateY(60px);
+      -moz-transform: translateY(60px);
+      -ms-transform: translateY(60px);
+      -o-transform: translateY(60px);
+      color: #ffffff;
+    }
+    100% {
+      transform: translateY(0px);
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+    }
+  }
+  /* =================================== */
+  
+  /* Animacion para el titulo */
+  .titulo:hover h3 {
+    animation-name: titulo;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    color: #000000;
+  }
+  @keyframes titulo {
+    0% {
+      position: relative;
+      left: 110px;
+    }
+    20% {
+      transform: translateX(80px);
+      -webkit-transform: translateX(80px);
+      -moz-transform: translateX(80px);
+      -ms-transform: translateX(80px);
+      -o-transform: translateX(80px);
+    }
+    40% {
+      transform: translateX(40px);
+      -webkit-transform: translateX(40px);
+      -moz-transform: translateX(40px);
+      -ms-transform: translateX(40px);
+      -o-transform: translateX(40px);
+    }
+    80% {
+      transform: translateX(20px);
+      -webkit-transform: translateX(20px);
+      -moz-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+      -o-transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0px);
+      -webkit-transform: translateX(0px);
+      -moz-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+      -o-transform: translateX(0px);
+    }
+  }
+  /* =================================== */
+  
+  /* Transicion al menu al hacer hover */
+  .enlaces {
+    transition: font-size, 0.2s;
+    -webkit-transition: font-size, 0.2s;
+    -moz-transition: font-size, 0.2s;
+    -ms-transition: font-size, 0.2s;
+    -o-transition: font-size, 0.2s;
+  }
+  .enlaces:hover {
+    font-size: 2.5rem;
+    color: rgb(60, 130, 223);
+  }
+  /* =================================== */
+  
+  /* Animacion para la imagen de fondo */
+  .titulo-principal {
+    animation-name: fondo;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    perspective: 100px;
+  }
+  
+  @keyframes fondo {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: 0px -200px;
+    }
+  }
+  /* =================================== */
+  
+  /* Animacion para el titulo principal */
+  #titulo {
+    display: block;
+    position: relative;
+    animation-name: entrada;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes entrada {
+    0% {
+      transform: translate3d(-100%, 0, 90px);
+      -webkit-transform: translate3d(-100%, 0, 90px);
+      -moz-transform: translate3d(-100%, 0, 90px);
+      -ms-transform: translate3d(-100%, 0, 90px);
+      -o-transform: translate3d(-100%, 0, 90px);
+    }
+    30% {
+      transform: translate3d(100%, 0, 90px);
+      -webkit-transform: translate3d(100%, 0, 90px);
+      -moz-transform: translate3d(100%, 0, 90px);
+      -ms-transform: translate3d(100%, 0, 90px);
+      -o-transform: translate3d(100%, 0, 90px);
+    }
+    90% {
+      transform: translate3d(-100%, 0, 90px);
+      -webkit-transform: translate3d(-100%, 0, 90px);
+      -moz-transform: translate3d(-100%, 0, 90px);
+      -ms-transform: translate3d(-100%, 0, 90px);
+      -o-transform: translate3d(-100%, 0, 90px);
+      color: rgba(233, 222, 226, 0.568);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+    }
+  }
+  /* =================================== */
+  
+  .tarjeta:hover {
+    background-color: #000000;
+    cursor: pointer;
+  }
+  
+  /* Animaciones para las tarjetas */
+  .tarjeta:hover .icono-tarjeta {
+    animation-name: iconos;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    color: #69cbf3;
+    margin-top: 10%;
+    font-size: 9rem;
+    font-weight: bolder;
+  }
+  
+  @keyframes iconos {
+    0% {
+      position: relative;
+      bottom: 100px;
+    }
+    100% {
+      bottom: 0px;
+    }
+  }
+  
+  .tarjeta:hover .tarjeta-titulo {
+    animation-name: titulo-iconos;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+  
+  @keyframes titulo-iconos {
+    0% {
+      position: relative;
+      bottom: 150px;
+    }
+    100% {
+      bottom: 0px;
+    }
+  }
+  
+  .tarjeta:hover .tarjeta-texto {
+    animation-name: tarjeta-texto;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    font-size: 1.7rem;
+    color: #ffffff;
+  }
+  
+  @keyframes tarjeta-texto {
+    0% {
+      position: relative;
+      right: 200px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+  /* =================================== */
+  
+  /* Transicion a las redes sociales */
+  .redes:hover .texto {
+    left: 50px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+  /* =================================== */
+  
+  /* Transiciones y animaciones al boton del blog */
+  
+  .boton-blog:hover {
+    border-radius: 50px;
+    border: 10px solid;
+    background-color: #5c5a52;
+    text-shadow: 0px 5px 1px #000000;
+    color: #FFFFFF;
+    transition: background-color 2s, border-radius 1s;
+    -webkit-transition: background-color 2s, border-radius 1s;
+    -moz-transition: background-color 2s, border-radius 1s;
+    -ms-transition: background-color 2s, border-radius 1s;
+    -o-transition: background-color 2s, border-radius 1s;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes color {
+  
+    0% {
+      border-color: #FADF71;
+    }
+    25% {
+      border-color: #d3f512
+    }
+    50% {
+      border-color: #97d329;
+    }
+    75% {
+      border-color: #42df12;
+    }
+    100% {
+      border-color: #0CF9A0;
+    }
+  }
+  /* =================================== */
+  
+  /* Animacion al menu del footer */
+  
+  .lista > a:hover {
+    padding-left: 25px;
+    color: #FFFFFF;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+  /* =================================== */
