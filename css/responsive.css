@@ -1,0 +1,405 @@
+@media screen and (max-width: 1121px) {
+
+    .contenedor-menu {
+        margin-right: 10rem;
+    }
+
+    .tarjeta {
+        width: 16%;
+    }
+
+    .tarjeta:hover .tarjeta-texto {
+        font-size: 1.6rem;
+    }
+
+    .articulos {
+        margin-left: 7rem;
+    }
+
+    .barra-lateral {
+        margin-right: 3rem;
+    }
+
+    .pie-menu {
+        width: 30%;
+        margin: 0rem 1rem;
+    }
+
+    .barra-titulo {
+        width: 100%;
+    }
+
+    .contenedor-pie > iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+
+    .titulo {
+        margin-left: 12rem;
+    }
+
+    .seccion-titulo > .titulo-principal {
+        font-size: 4rem;
+    }
+
+    .articulos {
+        margin-top: 12rem;
+        margin-left: 4rem;
+    }
+
+    .barra-lateral {
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 1026px ) {
+
+    .tarjeta-titulo {
+        font-size: 2rem;
+    }
+
+    .img {
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width: 874px) {
+
+    .titulo {
+        margin-left: 10rem;
+    }
+
+    .contenedor-menu {
+        margin-right: 5rem;
+    }
+
+    .seccion-tarjetas > .seccion-titulo {
+        width: 90%;
+    }
+
+    .tarjeta:hover .tarjeta-titulo {
+        margin-bottom: 1rem;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form-contenedor > input {
+        width: 90%;
+    }
+
+    .form-contenedor > .form-icon {
+        left: 2rem;
+    }
+}
+
+@media screen and (max-width: 825px) {
+
+    .tarjeta {
+        height: auto;
+    }
+
+    .tarjeta-titulo {
+        font-size: 1.8rem;
+    }
+
+    .tarjeta-texto {
+        display: none;
+    }
+
+    .titulo-articulo {
+        font-size: 2rem;
+    }
+
+    .img {
+        width: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 777px) {
+
+    .cabecera {
+        height: auto;
+    }
+
+    .titulo {
+        float: none;
+        clear: both;
+        margin: 0 auto;
+    }
+
+    .contenedor-menu {
+        float: none;
+        clear: both;
+        width: max-content;
+        margin: 0rem auto;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .seccion-titulo {
+        width: 95%;
+    }
+
+    .seccion-titulo >.titulo-principal {
+        padding: 1.5rem;
+    }
+
+    .tarjeta-titulo {
+        font-size: 1.7rem;
+    }
+
+    .articulos {
+        margin-left: 2rem;
+    }
+
+    .barra-lateral {
+        margin-right: 4rem;
+    }
+
+    .contenedor-input {
+        width: 100%;
+    }
+
+    .form-contenedor > input {
+        width: 95%;
+    }
+
+    .form-contenedor > .form-icon {
+        left: 1rem;
+    }
+
+    .boton {
+        width: 90px;
+    }
+
+    .boton + .boton {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .seccion-tarjetas > .seccion-titulo {
+        width: 95%;
+    }
+    
+    .articulos {
+        float: none;
+        clear: both;
+        width: 100%;
+        margin-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .articulo-titulo {
+        width: 90%;
+        margin: auto;
+    }
+
+    .tarjeta-articulo {
+        width: 90%;
+        margin: 2.5rem auto;
+    }
+
+    .titulo-articulo {
+        font-size: 3rem;
+    }
+
+    .fecha {
+        font-size: 1.5rem;
+    }
+
+    .boton-blog {
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    .barra-lateral {
+        width: 100%;
+        margin: 5rem auto;
+    }
+
+    .barra-titulo {
+        width: 90%;
+        text-align: center;
+    }
+
+    .contenedor-input {
+        width: 80%;
+    }
+
+    .form-contenedor {
+        margin-bottom: 3rem;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .form-contenedor > .form-icon {
+        left: 2rem;
+    }
+
+    .boton:first-child {
+        padding: 1rem;
+        width: 50%;
+        height: 4rem;
+        font-size: 2rem;
+        margin: 1.5rem 0rem;
+    }
+
+    .enlace {
+        font-size: 1.5rem;
+        margin: 1rem 0rem;
+    }
+
+    .contenedor-redes-sociales {
+        width: 80%;
+        height: auto;
+        text-align: center;
+    }
+
+    .redes {
+        display: inline-block;
+        margin: 0rem 2rem;
+    }
+
+    .redes a > .texto {
+        display: none;
+    }
+
+    .barra-titulo {
+        font-size: 2.2rem;
+    }
+
+    figure > img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .seccion-titulo > .titulo-principal {
+        font-size: 3.2rem;
+        padding: 3rem 1rem;
+    }
+
+    .titulo-articulo {
+        font-size: 2.5rem;
+    }
+
+    .fecha {
+        padding: 1rem;
+    }
+
+    .barra-titulo {
+        font-size: 2.5rem;
+    }
+
+    .redes {
+        font-size: 60px;
+    }
+
+    .pie-menu {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .pie-menu > ul {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .pie-menu > .contenedor-pie {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    figure > img {
+        width: 75%;
+    }
+
+    .img {
+        width: 15%;
+    }
+}  
+
+@media screen and (max-width: 580px) {
+
+    .cabecera {
+        text-align: center;
+    }
+
+    .titulo {
+        float: none;
+        clear: both;
+        display: inline-block;
+    }
+
+    ol > .item {
+        margin: 0rem 2rem;
+    }
+
+    .seccion-titulo > .titulo-principal {
+        font-size: 3rem;
+    }
+
+    .fecha {
+        position: relative;
+        top: -10px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+
+    .seccion-titulo > .titulo-principal {
+        padding: 3rem 0rem;
+        font-size: 2.8rem;
+    }
+
+    .tarjeta {
+        display: block;
+        margin-top: 0;
+        margin-left: auto;
+        margin-bottom: 1rem;
+        margin-right: auto;
+        width: 50%
+    }
+
+    .tarjeta-titulo {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 493px) {
+
+    .seccion-titulo {
+        display: none;
+    } 
+
+    .contenedor-menu {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    ol > .item {
+        float: none;
+        clear: both;
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+
+    /* En este media se hara lo siguiente
+    1- Modificar el diseño de las tarjetas
+    2- Arreglar el titulo de los articulos (el tamaño) y poner un margin bottom tambien
+    3- Intentar poner el menu con el CSS que tenemos en GITHUB, el menu hamburgesa que se desplase hacia abajo*/
+
+}
