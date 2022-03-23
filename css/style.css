@@ -44,6 +44,10 @@ html {
     font-size: 4rem;
 }
 
+input[type="checkbox"], .circle {
+  display: none;
+}
+
 .icon {
     font-size: 5rem;
     line-height: 5rem;

@@ -379,6 +379,38 @@
 
 @media screen and (max-width: 493px) {
 
+    .circle {
+        display: initial;
+        position: absolute;
+        color: #1cc238;
+        top: 1rem;
+        left: 1rem;
+        font-size: 5rem;
+    }
+
+    #mostrar:checked ~ .circle {
+        color: #f30909;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+    }
+
+    .contenedor-menu {
+        position: relative;
+        right: 100%;
+        transition: right 0.2s;
+        -webkit-transition: right 0.2s;
+        -moz-transition: right 0.2s;
+        -ms-transition: right 0.2s;
+        -o-transition: right 0.2s;
+    }
+
+    #mostrar:checked ~ .contenedor-menu {
+        right: 0%;
+    }
+
     .seccion-titulo {
         display: none;
     } 
@@ -396,10 +428,4 @@
         display: block;
         width: 100%;
     }
-
-    /* En este media se hara lo siguiente
-    1- Modificar el diseño de las tarjetas
-    2- Arreglar el titulo de los articulos (el tamaño) y poner un margin bottom tambien
-    3- Intentar poner el menu con el CSS que tenemos en GITHUB, el menu hamburgesa que se desplase hacia abajo*/
-
 }
